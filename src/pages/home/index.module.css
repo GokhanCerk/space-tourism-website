@@ -1,0 +1,96 @@
+.main {
+  @apply h-screen
+    bg-no-repeat
+    bg-cover
+    bg-center
+    bg-background-home-mobile
+    md:bg-background-home-tablet
+    2xl:bg-background-home-desktop
+}
+
+.hero {
+  @apply px-6
+    2xl:h-4/5
+    2xl:flex
+    2xl:items-center;
+}
+
+.hero-header {
+  @apply flex
+    flex-col
+    items-center
+    gap-4 
+    2xl:flex-row
+    2xl:justify-around
+    w-full;
+}
+
+.header {
+  @apply text-white
+    font-bellefair
+    text-[5rem]
+    md:text-[9.375rem]
+    2xl:text-[9.375rem]
+    uppercase
+    text-center;
+}
+
+.header-title {
+  @apply text-solid-blue
+    tracking-[3.38px]
+    text-xl
+    uppercase
+    text-center
+    2xl:text-left
+    2xl:text-[1.75rem]
+    font-barlowcondensed
+    mb-6
+    hidden
+    md:block
+    2xl:block;
+}
+
+.hero-description {
+  @apply text-solid-blue
+    text-center
+    2xl:text-left
+    font-barlow
+    leading-7
+    text-[0.9375rem]
+    2xl:text-[1.125rem]
+    md:text-[1rem]
+    md:w-[444px]
+    2xl:w-[444px]
+    2xl:leading-8;
+}
+
+.explore {
+  @apply w-[150px]
+    h-[150px]
+    md:w-[242px]
+    md:h-[242px]
+    2xl:w-[274px]
+    2xl:h-[274px]
+    rounded-full
+    bg-white
+    flex
+    items-center
+    justify-center
+    /* mt-16
+    md:mt-[156px] */
+    relative
+    
+
+}
+
+
+.explore-text {
+  @apply text-explore
+    font-bellefair
+    text-xl
+    uppercase
+    tracking-[1.25px]
+    flex
+    items-center
+    justify-center
+}

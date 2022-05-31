@@ -1,0 +1,13 @@
+.navigation{
+    @apply flex
+    justify-between
+    items-center
+    pl-6
+    pr-6
+    pt-6
+    mb-16
+}
+
+.customSidebar{
+    @apply fixed z-50 h-full right-0 w-[67%] backdrop-blur-xl
+}
