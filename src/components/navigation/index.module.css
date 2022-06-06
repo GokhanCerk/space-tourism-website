@@ -40,7 +40,7 @@
   border-solid 
   border-white 
   border-[1px] 
-  lg:w-[53%] md:block 2xl:w-[58%] 2xl:block lg:block md:w-[50%] 
+  md:hidden 2xl:w-[58%] 2xl:block
   absolute left-40 
   opacity-[0.25] z-20;
 }
