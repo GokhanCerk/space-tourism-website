@@ -10,6 +10,11 @@ module.exports = {
           "url('/src/assets/home/background-home-tablet.jpg')",
         "background-home-desktop":
           "url('/src/assets/home/background-home-desktop.jpg')",
+        "background-destination-desktop":
+          "url('/src/assets/destination/background-destination-desktop.jpg')",
+      },
+      backgroundColor: {
+        nav: "rgba(255, 255, 255, 0.04)",
       },
       screens: {
         "2xl": "1440px",

@@ -1,13 +1,46 @@
-.navigation{
-    @apply flex
+.navigation {
+  @apply flex
     justify-between
     items-center
     pl-6
     pr-6
     pt-6
     mb-16
+    h-24
+    relative;
 }
 
-.customSidebar{
-    @apply fixed z-50 h-full right-0 w-[67%] backdrop-blur-xl
+.customSidebar {
+  @apply fixed z-50 h-full right-0 w-[67%] backdrop-blur-xl;
+}
+
+.nav {
+  @apply text-white
+    w-[35%]
+    h-24 
+    hidden
+    md:flex
+    justify-evenly
+    uppercase
+    font-barlowcondensed
+    tracking-[2.36px]
+    md:text-sm
+    bg-nav
+    backdrop-blur-[81.5485px] 
+    relative
+    z-10;
+}
+
+.nav a {
+  @apply pt-9;
+}
+
+.border {
+  @apply hidden 
+  border-solid 
+  border-white 
+  border-[1px] 
+  lg:w-[53%] md:block 2xl:w-[58%] 2xl:block lg:block md:w-[50%] 
+  absolute left-40 
+  opacity-[0.25] z-20;
 }

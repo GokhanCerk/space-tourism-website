@@ -1,0 +1,7 @@
+.hero{
+    @apply h-screen
+    bg-no-repeat
+    bg-cover
+    bg-center
+    bg-background-destination-desktop
+}

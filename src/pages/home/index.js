@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <main className={main}>
       <Navigation />
-      <section className={hero}>
+      <main className={hero}>
         <header className={styles["hero-header"]}>
           <div className={space}>
             <h3 className={styles["header-title"]}>
@@ -33,7 +33,7 @@ const Home = () => {
             <span className={styles["explore-text"]}>Explore</span>
           </div>
         </header>
-      </section>
+      </main>
     </main>
   );
 };
