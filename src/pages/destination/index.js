@@ -12,11 +12,18 @@ const Destination = () => {
 
   let location = useLocation();
   console.log(location.hash);
-{/** toDos: Refactoring: Gökhan Ç. */}
+  {
+    /** toDos: Refactoring: Gökhan Ç. */
+  }
   return (
     <>
       <main className={hero}>
         <Navigation />
+
+        <h1 className="mb-8 text-white text-center uppercase font-barlowcondensed tracking-[2.7px]">
+          <span className="pr-3 font-barlowcondensed font-bold text-base tracking-[2.7px] opacity-25">01</span>Pick
+          your destination
+        </h1>
 
         {destinations.map((destination) => {
           return (
@@ -95,21 +102,37 @@ const Destination = () => {
               <>
                 {location.hash === "" && destination.name === "Moon" && (
                   <>
-                    <h1 className="uppercase mb-3 font-barlowcondensed leading-[2.36px] text-sm text-solid-blue">AVG. DISTANCE</h1>
-                    <p className="uppercase mb-8 font-bellefair text-2xl ">{destination.distance}</p>
+                    <h1 className="uppercase mb-3 font-barlowcondensed leading-[2.36px] text-sm text-solid-blue">
+                      AVG. DISTANCE
+                    </h1>
+                    <p className="uppercase mb-8 font-bellefair text-2xl ">
+                      {destination.distance}
+                    </p>
 
-                    <h1 className="uppercase mb-3 text-solid-blue tracking-[2.36px] text-sm font-barlowcondensed">Est. travel time</h1>
-                    <p className="uppercase font-bellefair text-2xl">{destination.travel}</p>
+                    <h1 className="uppercase mb-3 text-solid-blue tracking-[2.36px] text-sm font-barlowcondensed">
+                      Est. travel time
+                    </h1>
+                    <p className="uppercase font-bellefair text-2xl">
+                      {destination.travel}
+                    </p>
                   </>
                 )}
 
                 {location.hash.replace("#", "") === destination.name && (
                   <>
-                    <h1 className="uppercase mb-3 font-barlowcondensed tracking-[2.36px] text-sm text-solid-blue">AVG. DISTANCE</h1>
-                    <p className="uppercase mb-8 font-bellefair text-2xl">{destination.distance}</p>
+                    <h1 className="uppercase mb-3 font-barlowcondensed tracking-[2.36px] text-sm text-solid-blue">
+                      AVG. DISTANCE
+                    </h1>
+                    <p className="uppercase mb-8 font-bellefair text-2xl">
+                      {destination.distance}
+                    </p>
 
-                    <h1 className="uppercase mb-3 text-solid-blue tracking-[2.36px] text-sm font-barlowcondensed">Est. travel time</h1>
-                    <p className="uppercase font-bellefair text-2xl">{destination.travel}</p>
+                    <h1 className="uppercase mb-3 text-solid-blue tracking-[2.36px] text-sm font-barlowcondensed">
+                      Est. travel time
+                    </h1>
+                    <p className="uppercase font-bellefair text-2xl">
+                      {destination.travel}
+                    </p>
                   </>
                 )}
               </>

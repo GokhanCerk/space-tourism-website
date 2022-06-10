@@ -12,6 +12,8 @@ module.exports = {
           "url('/src/assets/home/background-home-desktop.jpg')",
         "background-destination-desktop":
           "url('/src/assets/destination/background-destination-desktop.jpg')",
+        "background-destination-mobile":
+          "url('/src/assets/destination/background-destination-mobile.jpg')",
       },
       backgroundColor: {
         nav: "rgba(255, 255, 255, 0.04)",

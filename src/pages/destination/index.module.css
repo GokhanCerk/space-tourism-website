@@ -1,9 +1,10 @@
 .hero{
-    @apply h-screen
+    @apply h-full
     bg-no-repeat
     bg-cover
     bg-center
-    bg-background-destination-desktop
+    bg-background-destination-mobile
+    2xl:bg-background-destination-desktop
 }
 
 .img{
