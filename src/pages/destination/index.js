@@ -12,7 +12,7 @@ const Destination = () => {
 
   let location = useLocation();
   console.log(location.hash);
-
+{/** toDos: Refactoring: Gökhan Ç. */}
   return (
     <>
       <main className={hero}>
@@ -98,17 +98,17 @@ const Destination = () => {
                     <h1 className="uppercase mb-3 font-barlowcondensed leading-[2.36px] text-sm text-solid-blue">AVG. DISTANCE</h1>
                     <p className="uppercase mb-8 font-bellefair text-2xl ">{destination.distance}</p>
 
-                    <h1 className="uppercase mb-3 text-solid-blue leading-[2.36px] text-sm font-barlowcondensed">Est. travel time</h1>
+                    <h1 className="uppercase mb-3 text-solid-blue tracking-[2.36px] text-sm font-barlowcondensed">Est. travel time</h1>
                     <p className="uppercase font-bellefair text-2xl">{destination.travel}</p>
                   </>
                 )}
 
                 {location.hash.replace("#", "") === destination.name && (
                   <>
-                    <h1 className="uppercase mb-3 font-barlowcondensed leading-[2.36px] text-sm text-solid-blue">AVG. DISTANCE</h1>
+                    <h1 className="uppercase mb-3 font-barlowcondensed tracking-[2.36px] text-sm text-solid-blue">AVG. DISTANCE</h1>
                     <p className="uppercase mb-8 font-bellefair text-2xl">{destination.distance}</p>
 
-                    <h1 className="uppercase mb-3 text-solid-blue leading-[2.36px] text-sm font-barlowcondensed">Est. travel time</h1>
+                    <h1 className="uppercase mb-3 text-solid-blue tracking-[2.36px] text-sm font-barlowcondensed">Est. travel time</h1>
                     <p className="uppercase font-bellefair text-2xl">{destination.travel}</p>
                   </>
                 )}
