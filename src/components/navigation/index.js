@@ -45,7 +45,7 @@ const Navigation = () => {
               </span>
 
               <NavLink
-                to="/destination"
+                to="/destination#Moon"
                 className={({ isActive }) =>
                   (isActive ? "border-r-4" : "") + " flex w-full"
                 }

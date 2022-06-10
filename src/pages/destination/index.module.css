@@ -5,3 +5,8 @@
     bg-center
     bg-background-destination-desktop
 }
+
+.img{
+    @apply w-[170px]
+    h-[170px]
+}
