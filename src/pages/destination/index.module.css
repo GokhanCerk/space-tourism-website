@@ -1,13 +1,16 @@
 .hero{
-    @apply h-full
+    @apply min-h-screen
     bg-no-repeat
     bg-cover
     bg-center
     bg-background-destination-mobile
+    md:bg-background-destination-tablet
     2xl:bg-background-destination-desktop
 }
 
 .img{
     @apply w-[170px]
     h-[170px]
+    md:w-[300px]
+    md:h-[300px]
 }

@@ -8,21 +8,25 @@ import { NavLink } from "react-router-dom";
 const Destination = () => {
   const { hero, img } = styles;
   const destinations = DATA.destinations;
-  console.log(destinations);
-
   let location = useLocation();
-  console.log(location.hash);
+
   {
-    /** toDos: Refactoring: Gökhan Ç. */
+    /** toDos: Refactoring: Gökhan Ç.
+     * https://swiperjs.com/demos#space-between
+     * https://swiperjs.com/demos#pagination-custom
+     *
+     */
   }
   return (
     <>
       <main className={hero}>
         <Navigation />
 
-        <h1 className="mb-8 text-white text-center uppercase font-barlowcondensed tracking-[2.7px]">
-          <span className="pr-3 font-barlowcondensed font-bold text-base tracking-[2.7px] opacity-25">01</span>Pick
-          your destination
+        <h1 className="mb-8 text-white text-center md:text-left md:ml-9 uppercase font-barlowcondensed tracking-[2.7px]">
+          <span className="pr-3 font-barlowcondensed font-bold text-base tracking-[2.7px] opacity-25">
+            01
+          </span>
+          Pick your destination
         </h1>
 
         {destinations.map((destination) => {
@@ -45,7 +49,7 @@ const Destination = () => {
           );
         })}
 
-        <div className="flex justify-around font-barlowcondensed text-sm tracking-[2.36px] uppercase mt-6 mb-5">
+        <div className="flex justify-around font-barlowcondensed text-sm md:text-base tracking-[2.36px] uppercase mt-6 mb-5">
           {destinations.map((destination) => (
             <NavLink
               to={`#` + destination.name}
@@ -71,10 +75,10 @@ const Destination = () => {
               <>
                 {location.hash === "" && destination.name === "Moon" && (
                   <>
-                    <h1 className="uppercase font-bellefair text-5xl">
+                    <h1 className="uppercase font-bellefair text-5xl md:text-7xl">
                       {destination.name}
                     </h1>
-                    <p className="p-5 text-center font-barlow text-[15px] leading-6 text-solid-blue mb-8">
+                    <p className="p-5 text-center font-barlow text-[15px] md:text-base leading-6 text-solid-blue mb-8 md:w-4/5">
                       {destination.description}
                     </p>
                   </>
@@ -82,10 +86,10 @@ const Destination = () => {
 
                 {location.hash.replace("#", "") === destination.name && (
                   <>
-                    <h1 className="uppercase font-bellefair text-5xl">
+                    <h1 className="uppercase font-bellefair text-5xl md:text-7xl">
                       {destination.name}
                     </h1>
-                    <p className="p-5 text-center font-barlow text-[15px] leading-6 text-solid-blue mb-8">
+                    <p className="p-5 text-center font-barlow text-[15px] md:text-base leading-6 text-solid-blue mb-8">
                       {destination.description}
                     </p>
                   </>
@@ -96,43 +100,51 @@ const Destination = () => {
         </div>
         <div className="mx-auto border border-dark-grey w-4/5 mb-8"></div>
 
-        <div className="flex flex-col text-white items-center">
+        <div className="flex flex-col md:flex-row text-white  items-center md:items-start md:justify-evenly">
           {destinations.map((destination) => {
             return (
               <>
                 {location.hash === "" && destination.name === "Moon" && (
                   <>
-                    <h1 className="uppercase mb-3 font-barlowcondensed leading-[2.36px] text-sm text-solid-blue">
-                      AVG. DISTANCE
-                    </h1>
-                    <p className="uppercase mb-8 font-bellefair text-2xl ">
-                      {destination.distance}
-                    </p>
+                    <div className="flex flex-col items-center">
+                      <h1 className="uppercase mb-3 font-barlowcondensed tracking-[2.36px] text-sm text-solid-blue">
+                        AVG. DISTANCE
+                      </h1>
+                      <p className="uppercase mb-8 font-bellefair text-2xl ">
+                        {destination.distance}
+                      </p>
+                    </div>
 
-                    <h1 className="uppercase mb-3 text-solid-blue tracking-[2.36px] text-sm font-barlowcondensed">
-                      Est. travel time
-                    </h1>
-                    <p className="uppercase font-bellefair text-2xl">
-                      {destination.travel}
-                    </p>
+                    <div className="flex flex-col items-center">
+                      <h1 className="uppercase mb-3 text-solid-blue tracking-[2.36px] text-sm font-barlowcondensed">
+                        Est. travel time
+                      </h1>
+                      <p className="uppercase font-bellefair text-2xl">
+                        {destination.travel}
+                      </p>
+                    </div>
                   </>
                 )}
 
                 {location.hash.replace("#", "") === destination.name && (
                   <>
-                    <h1 className="uppercase mb-3 font-barlowcondensed tracking-[2.36px] text-sm text-solid-blue">
-                      AVG. DISTANCE
-                    </h1>
-                    <p className="uppercase mb-8 font-bellefair text-2xl">
-                      {destination.distance}
-                    </p>
+                    <div className="flex flex-col items-center">
+                      <h1 className="uppercase mb-3 font-barlowcondensed tracking-[2.36px] text-sm text-solid-blue">
+                        AVG. DISTANCE
+                      </h1>
+                      <p className="uppercase mb-8 font-bellefair text-2xl">
+                        {destination.distance}
+                      </p>
+                    </div>
 
-                    <h1 className="uppercase mb-3 text-solid-blue tracking-[2.36px] text-sm font-barlowcondensed">
-                      Est. travel time
-                    </h1>
-                    <p className="uppercase font-bellefair text-2xl">
-                      {destination.travel}
-                    </p>
+                    <div className="flex flex-col items-center">
+                      <h1 className="uppercase mb-3 text-solid-blue tracking-[2.36px] text-sm font-barlowcondensed">
+                        Est. travel time
+                      </h1>
+                      <p className="uppercase font-bellefair text-2xl">
+                        {destination.travel}
+                      </p>
+                    </div>
                   </>
                 )}
               </>
