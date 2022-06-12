@@ -8,9 +8,44 @@
     2xl:bg-background-destination-desktop
 }
 
+.container{
+    @apply mx-auto
+    text-white
+    h-screen
+    w-3/4
+    flex
+    flex-col
+    2xl:justify-around
+    2xl:flex-row
+
+ 
+}   
+
 .img{
     @apply w-[170px]
     h-[170px]
     md:w-[300px]
     md:h-[300px]
+    2xl:w-[445px]
+    2xl:h-[445px]
+}
+
+.active{
+    @apply border-b-4
+ 
+}
+
+.universeImg{
+    @apply flex
+    w-full
+    justify-center
+    2xl:items-center
+}
+
+.tabBtns{
+    @apply w-full   
+    2xl:pt-44
+    pt-12
+    flex
+    justify-evenly
 }
