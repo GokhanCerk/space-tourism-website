@@ -1,9 +1,10 @@
 .tabBtn{
     @apply uppercase
-    /* 2xl:mr-9 */
+    2xl:mr-9
     pb-3
     font-barlowcondensed 
     text-sm 
     md:text-base 
     tracking-[2.36px]
+
 }
