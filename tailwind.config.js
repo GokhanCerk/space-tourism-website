@@ -31,7 +31,7 @@ module.exports = {
       colors: {
         "solid-blue": "#D0D6F9",
         explore: "#0B0D17",
-        'dark-grey':'#383B4B',
+        "dark-grey": "#383B4B",
       },
     },
   },
