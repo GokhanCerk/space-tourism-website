@@ -1,0 +1,9 @@
+.main {
+  @apply min-h-screen
+        bg-no-repeat
+        bg-cover
+        bg-center
+        bg-background-technology-mobile
+        md:bg-background-technology-tablet
+        2xl:bg-background-technology-desktop;
+}
