@@ -5,6 +5,7 @@ import { DATA } from "../../data";
 import TabBtn from "../../components/Tabs.js";
 
 const Destination = () => {
+  const destinations = DATA.destinations;
   const {
     hero,
     img,
@@ -20,9 +21,9 @@ const Destination = () => {
     pick,
     dinfo,
   } = styles;
-  const [isActive, setIsActive] = useState("Moon");
-  const destinations = DATA.destinations;
 
+  const [isActive, setIsActive] = useState(destinations[0].name);
+  
   const tabBtn = destinations.map((destination) => (
     <TabBtn
       name={destination.name}
