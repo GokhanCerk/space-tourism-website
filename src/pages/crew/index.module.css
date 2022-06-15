@@ -1,0 +1,10 @@
+.main {
+  @apply min-h-screen
+      bg-no-repeat
+      bg-cover
+      bg-center
+      bg-background-crew-mobile
+      md:bg-background-crew-tablet
+      2xl:bg-background-crew-desktop
+      text-white
+}

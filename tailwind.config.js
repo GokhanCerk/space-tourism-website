@@ -16,6 +16,12 @@ module.exports = {
           "url('/src/assets/destination/background-destination-mobile.jpg')",
         "background-destination-tablet":
           "url('/src/assets/destination/background-destination-tablet.jpg')",
+        "background-crew-desktop":
+          "url('/src/assets/crew/background-crew-desktop.jpg')",
+        "background-crew-tablet":
+          "url('/src/assets/crew/background-crew-tablet.jpg')",
+        "background-crew-mobile":
+          "url('/src/assets/crew/background-crew-mobile.jpg')",
       },
       backgroundColor: {
         nav: "rgba(255, 255, 255, 0.04)",
