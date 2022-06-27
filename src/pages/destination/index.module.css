@@ -11,7 +11,6 @@
 .container {
   @apply mx-auto
     text-white
-    h-screen
     w-3/4
     flex
     flex-col

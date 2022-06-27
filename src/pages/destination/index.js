@@ -22,7 +22,10 @@ const Destination = () => {
     dinfo,
   } = styles;
 
-  const [isActive, setIsActive] = useState(destinations[0].name);
+  const currentTab = localStorage.getItem('currentTab');
+  const [isActive, setIsActive] = useState(currentTab === null ? destinations[0].name : currentTab);
+
+
   
   const tabBtn = destinations.map((destination) => (
     <TabBtn

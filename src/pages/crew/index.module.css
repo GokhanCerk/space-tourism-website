@@ -1,9 +1,70 @@
 .main {
   @apply min-h-screen
-      bg-no-repeat
-      bg-cover
-      bg-center
-      bg-background-crew-mobile
-      md:bg-background-crew-tablet
-      2xl:bg-background-crew-desktop
+    bg-no-repeat
+    bg-cover
+    bg-center
+    bg-background-crew-mobile
+    md:bg-background-crew-tablet
+    2xl:bg-background-crew-desktop;
+}
+
+.container {
+  @apply mx-auto
+  2xl:w-3/4
+  2xl:relative
+  2xl:h-[75vh]
+  h-full
+  flex
+  2xl:block
+  flex-col
+  items-center
+}
+
+.pick {
+  @apply text-white
+    md:ml-9
+    mb-8
+    md:mb-14
+    2xl:ml-40
+    font-barlowcondensed 
+    tracking-[2.7px]
+    2xl:tracking-[4.72px]
+    md:tracking-[3.38px]
+    2xl:text-3xl
+    md:text-xl
+    uppercase
+    md:text-left
+    text-center;
+}
+
+.pick span {
+  @apply pr-3 
+    font-barlowcondensed 
+    font-bold 
+    text-base
+    tracking-[4.72px]
+    md:tracking-[2.7px] 
+    opacity-25
+    2xl:text-3xl
+    md:text-xl;
+}
+
+.bio{
+  @apply 2xl:w-1/2
+  w-3/4
+  h-full
+  2xl:relative
+  md:flex
+  md:flex-col
+  md:items-center
+  2xl:block
+}
+
+.hr {
+  @apply border 
+  border-solid 
+  border-dark-grey
+  md:hidden
+  2xl:hidden
+  mb-6
 }
