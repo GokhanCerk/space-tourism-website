@@ -5,8 +5,8 @@ const Bullet = ({ keys, selected, crew, setPerson, setSelectPerson }) => {
   const setOnClick = () => {
     setPerson(crew);
     setSelectPerson(keys);
+    localStorage.setItem('currentBullet', keys)
   }
-
 
   return (
     <button

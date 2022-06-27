@@ -8,9 +8,10 @@ const Crew = () => {
   const { container, bio, hr } = styles;
   const crews = DATA.crew;
   const { main, pick } = styles;
+  const currentBullet = localStorage.getItem('currentBullet') 
   const arrKeys = Object.keys(crews);
-  const [selectPerson, setSelectPerson] = useState(parseInt(arrKeys[0]));
-  const [person, setPerson] = useState(crews[selectPerson]);
+  const [selectPerson, setSelectPerson] = useState(currentBullet === null ? parseInt(arrKeys[0]) : parseInt(currentBullet));
+  const [person, setPerson] = useState(crews[currentBullet === null ? selectPerson : currentBullet]);
 
   const paginateBullets = crews.map((crew, key) => (
     <Bullet
